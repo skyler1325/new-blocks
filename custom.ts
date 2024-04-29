@@ -17,19 +17,19 @@ enum MyEnum {
 //% weight=100 color=#0fbc11 icon=""
 namespace custom {
     /**
-     * TODO: describe your function here
-     * @param n describe parameter here, eg: 5
-     * @param s describe parameter here, eg: "Hello"
-     * @param e describe parameter here
+     * logs data to the console
+     * @param s what to log to the console, eg: "Hello"
+     * 
      */
     //% block
-    export function foo(n: number, s: string, e: MyEnum): void {
+    export function foo(s: any): void {
         // Add code here
+        console.log(s)
     }
 
     /**
-     * TODO: describe your function here
-     * @param value describe value here, eg: 5
+     * Computes the famous Fibonacci number sequence!
+     * @param value the number to compute, eg: 5
      */
     //% block
     export function fib(value: number): number {
